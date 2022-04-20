@@ -75,5 +75,5 @@ auto f2 = [=]()         {x = 42;};  // error, 不允许修改按值捕获的外�
 
 #### 参考
 
-[C++ 中的 mutable 关键字](https://liam.page/2017/05/25/the-mutable-keyword-in-Cxx/)
-[C++中mutable关键字存在的必要性是什么？](https://www.zhihu.com/question/64969053)
+- [C++ 中的 mutable 关键字](https://liam.page/2017/05/25/the-mutable-keyword-in-Cxx/)
+- [C++中mutable关键字存在的必要性是什么？](https://www.zhihu.com/question/64969053)
