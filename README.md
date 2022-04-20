@@ -1,5 +1,3 @@
 # spkywood
 
-## c 笔记
-
-## c++ 笔记
+![Code Languages](https://github-readme-stats.vercel.app/api/top-langs?username=spkywood&show_icons=true&count_private=true&theme=gotham)
