@@ -4,6 +4,7 @@ public:
         static Singleton inst;
         return inst;
     }
+    
     Singleton(const Singleton&) = delete;
     Singleton& operator=(const Singleton&) = delete;
 
