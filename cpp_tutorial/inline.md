@@ -78,7 +78,61 @@ int main()
 ## 3. 将 `constructor` 和 `destructor` 实现为 `inline` 函数
 
 
+```c++
+#include <iostream>
+using namespace std;
+
+class myClass
+{
+private:
+    int a, b;
+public:
+    myClass();
+    ~myClass();
+    void sum();
+};
+
+inline myClass::myClass()
+{
+    a = 100;
+    b = 200;
+}
+
+inline myClass::~myClass()
+{
+    cout<<"destroying the object\n";
+}
+
+inline void myClass::sum()
+{
+    cout<<"Sum of two numbers is "<<a+b<<endl;
+}
+
+int main()
+{
+    cout << "Program using inline function\n";
+    myClass obj;
+    obj.sum();
+}
+```
+
 ## 4. 实现 `inline` 函数的优缺点
+
+- `inline` 函数的一些优点：
+
+    - 减少函数调用的开销。
+    - 它节省了函数返回调用的开销。
+    - 节省入栈和出栈变量的开销。
+    - 虽然有用，但它也有一些缺点：
+
+<br>
+
+- `inline` 函数的一些缺点：
+
+    - 如果我们使用过多的 `inline` 函数，二进制可执行文件的大小可能会变大，因为这里会发生相同代码的重复。
+    - 内联函数过多会降低指令的缓存命中率，从而影响指令从缓存内存到主内存的速度。
+    - 在代码大小比速度更重要的嵌入式系统中，内联函数将无济于事。
+    - 可能会出现抖动，这会降低计算机的内存性能。
 
 ## 5. 何时使用内联函数
 
@@ -176,3 +230,7 @@ int main() {
    printf_s( "%c", ch );
 }
 ```
+
+#### 参考
+
+[内联函数 (C++)](https://docs.microsoft.com/zh-cn/cpp/cpp/inline-functions-cpp?view=msvc-170)
