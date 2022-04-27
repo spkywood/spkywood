@@ -10,3 +10,5 @@
 - [`switch`](switch.md)
 - [**函数**](function.md)
     - [内联函数 `inline`](inline.md)
+
+- [**指针**](pointer.md)
