@@ -5,6 +5,7 @@
 - [C++ 匿名函数](匿名函数.md)
 - [C++ 单例模式](Singleton.cpp)
 - [***类**](类.md)
+    - [枚举类](enum_class.md)
     - [运算符重载](operate_overload.md)
 
 - [`switch`](switch.md)
