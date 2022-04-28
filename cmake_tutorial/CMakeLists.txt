@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.22)
 
 project(cmake_tutorial)
 
@@ -10,9 +10,10 @@ add_definitions(-std=c++11)
 # set(CMAKE_BUILD_TYPE Debug)
 
 # OpenCV
-set(OpenCV_DIR /home/ubuntu/opencv-4.4.0/build)
+# set(OpenCV_DIR /home/ubuntu/opencv-4.4.0/build)
 find_package( OpenCV 4 REQUIRED )
 
+include_directories( "/usr/local/Cellar/eigen/3.4.0_1/include/eigen3" )
 
 include_directories( ${OpenCV_INCLUDE_DIRS} )   # 添加头文件
 
