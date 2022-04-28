@@ -1,3 +1,0 @@
-/Users/longfellow/Workspace/spkywood/cmake_tutorial/build/CMakeFiles/test.dir
-/Users/longfellow/Workspace/spkywood/cmake_tutorial/build/CMakeFiles/edit_cache.dir
-/Users/longfellow/Workspace/spkywood/cmake_tutorial/build/CMakeFiles/rebuild_cache.dir
