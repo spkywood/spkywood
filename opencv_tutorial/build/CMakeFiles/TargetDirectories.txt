@@ -1,0 +1,4 @@
+/Users/longfellow/Workspace/spkywood/opencv_tutorial/build/CMakeFiles/fld_lines.dir
+/Users/longfellow/Workspace/spkywood/opencv_tutorial/build/CMakeFiles/shape_example.dir
+/Users/longfellow/Workspace/spkywood/opencv_tutorial/build/CMakeFiles/edit_cache.dir
+/Users/longfellow/Workspace/spkywood/opencv_tutorial/build/CMakeFiles/rebuild_cache.dir
