@@ -13,6 +13,13 @@ add_definitions(-std=c++11)
 # set(OpenCV_DIR /home/ubuntu/opencv-4.4.0/build)
 find_package( OpenCV 4 REQUIRED )
 
+# print message
+message(STATUS "OpenCV library status:")
+message(STATUS "    config: ${OpenCV_DIR}")
+message(STATUS "    version: ${OpenCV_VERSION}")
+message(STATUS "    libraries: ${OpenCV_LIBS}")
+message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
+
 include_directories( "/usr/local/Cellar/eigen/3.4.0_1/include/eigen3" )
 
 include_directories( ${OpenCV_INCLUDE_DIRS} )   # 添加头文件

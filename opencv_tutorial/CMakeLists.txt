@@ -15,6 +15,8 @@ include_directories( ${OpenCV_INCLUDE_DIRS} )   # 添加头文件
 
 add_executable( fld_lines src/fld_lines.cpp )
 add_executable( shape_example src/shape_example.cpp )
+add_executable( camshiftdemo src/camshiftdemo.cpp )
 
-target_link_libraries( fld_lines ${OpenCV_LIBS} )    # 链接OpenCV库
-target_link_libraries( shape_example ${OpenCV_LIBS} )    # 链接OpenCV库
+target_link_libraries( fld_lines ${OpenCV_LIBS} )
+target_link_libraries( shape_example ${OpenCV_LIBS} )
+target_link_libraries( camshiftdemo ${OpenCV_LIBS} )

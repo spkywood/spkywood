@@ -55,10 +55,54 @@ template <class Ty, std::size_t N>
 class array;
 ```
 
+```c++
+#include <array>
+#include <iostream>
+
+int main(int argc, char const *argv[])
+{
+    std::array<int, 6> arr = {6, 3, 2, 5, 1, 4};
+    arr.empty();
+    arr.size();
+
+    for (auto &&i : arr)
+    {
+        std::cout << i << " ";
+    }
+
+    // 用 lambda 表达式排序
+    std::sort(arr.begin(), arr.end(), [](int a, int b) {return a < b;});
+    
+    // 将其兼容 C 风格的接口
+    void foo(int *p, int len) {
+        return;
+    }
+    // foo(arr, arr.size()); // 非法, 无法隐式转换
+    foo(&arr[0], arr.size());
+    foo(arr.data(), arr.size());
+    
+    // 使用 `std::sort`
+    std::sort(arr.begin(), arr.end());
+
+    return 0;
+}
+```
+
 ### `std::list`
 
 
 ### `std::forward_list`
+
+## 无序容器
+
+- `std::map`
+- `std::set`
+- `std::unordered_map` 和 `std::unordered_multimap`
+- `std::unordered_set` 和 `std::unordered_multiset`
+
+## 元祖
+
+- `std::tuple`
 
 ## 参考
 
