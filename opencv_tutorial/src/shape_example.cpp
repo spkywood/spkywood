@@ -113,7 +113,7 @@ int main(int argc, char** argv)
     
     stringstream bestname;
     bestname << path << bestMatch <<".jpeg";
-    Mat iiIm=imread(bestname.str(), 0);
+    Mat iiIm = imread(bestname.str(), 0);
     Mat bestToShow;
     resize(iiIm, bestToShow, sz2Sh, 0, 0, INTER_LINEAR_EXACT);
     imshow("BEST MATCH", bestToShow);
