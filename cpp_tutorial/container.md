@@ -2,6 +2,22 @@
 
 ## 线性容器
 
+### `std::vector`
+
+名称 | 说明 
+---------|----------
+ `assign` | 清除`vector`并将指定的元素复制到该空`vector`。
+ `at` | 返回`vector`中指定索引的元素的引用。 
+ `back` | 返回`vector`中最后元素的引用。
+ `begin` | 返回`vector`中第一个元素返回迭代器`std::vector<TYPE>::iterator`。
+ `end` | 返回`vector`中最后元素返回迭代器。
+ `cbegin` | 返回`vector`中的 `const_iterator`。
+ `cend` | 返回`vector`中的 `const_iterator`。
+ `rbegin` | 返回`vector`中倒序首元素返回迭代器。
+ `rend` |  `end` | 返回`vector`中倒序最后元素返回迭代器。
+ `crbegin` | 返回`vector`中的 `const_iterator`。
+ `crend` | 返回`vector`中的 `const_iterator`。
+
 ### `std::array`
 
 - 为什么要引入 `std::array` 而不是直接使用 `std::vector`？
